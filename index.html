@@ -9,14 +9,31 @@
     <link href="main.css" rel="stylesheet">
 </head>
 <body>
-<header>
-    <div class="divInput">
-        <input id="mainInput" type="text">
-        <button id="btnSearch">Find</button>
-    </div>
-    <div class="headWeather">OpenWether API</div>
-    <div id="mainOutput"></div>
-</header>
+    <header>
+        <div id="mainOutput">
+            <div class="divInput">
+                <input id="mainInput" type="text">
+                <button id="btnSearch" class="btnInput">Find</button>
+                <button id="navigation" class="btnInput">MY LOCATION</button>
+            </div>
+
+            <div class="timeAndCity">
+                <div id="clientTime">
+                    <div class="hour"></div>
+                    <div class="month"></div>
+                </div>
+                <div id=clientCity>
+                    <div id="city"></div>
+                    <div id="country"></div>
+                </div>
+            </div>
+
+            <div id="weather">
+                <div id="todayWeather"></div>
+                <div id="futureWeather"></div>
+            </div>
+        </div>
+    </header>
 <script src="main.js"></script>
 </body>
 </html>
