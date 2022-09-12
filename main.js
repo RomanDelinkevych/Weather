@@ -79,7 +79,7 @@ class urlService {
     }
 
     getLatLonCity(e) {
-        fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${this.cityName}&appid=d59a0c78a31e2f2917a6b6b76f643510`)
+        fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${this.cityName}&appid=d59a0c78a31e2f2917a6b6b76f643510`)
             .then(response => response.json())
             .then(json => {
                 // console.log(json);
